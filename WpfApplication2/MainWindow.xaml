@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thực Hiện Các Phép Tính" Height="350" Width="556">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="251*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="485*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Giá Trị 1" HorizontalAlignment="Left" Margin="43,24,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Giá Trị 2" HorizontalAlignment="Left" Margin="43,103,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox x:Name="txta" HorizontalAlignment="Left" Height="23" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox x:Name="txtb" HorizontalAlignment="Left" Height="23" Margin="43,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <RadioButton x:Name="chia" Content="Integer Division(/)" HorizontalAlignment="Left" Margin="136,40,0,0" VerticalAlignment="Top" GroupName="rd" Grid.Column="1" Grid.Row="1"/>
+        <RadioButton x:Name="laydu" Content="remainder(mod)" HorizontalAlignment="Left" Margin="136,79,0,0" VerticalAlignment="Top" GroupName="rd" Grid.Column="1" Grid.Row="1" Checked="laydu_Checked"/>
+        <RadioButton x:Name="luythua" Content="Exponentiation(^)" HorizontalAlignment="Left" Margin="136,113,0,0" VerticalAlignment="Top" GroupName="rd" Grid.Column="1" Grid.Row="1"/>
+        <RadioButton x:Name="ko" Content="Concatenation()" HorizontalAlignment="Left" Margin="136,147,0,0" VerticalAlignment="Top" GroupName="rd" Grid.Column="1" Grid.Row="1" />
+        <GroupBox Header="Toán Tử&#xD;&#xA;" HorizontalAlignment="Left" Margin="119,10,0,0" VerticalAlignment="Top" Height="187" Width="153" Grid.Row="1" Grid.Column="1"/>
+        <Label Content="Kết Quả" HorizontalAlignment="Left" Margin="336,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="kq" HorizontalAlignment="Left" Margin="319,41,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="125" Height="30" FontSize="18" Grid.Column="1" Grid.Row="1" TextChanged="kq_TextChanged"/>
+        <Button x:Name="tinh" Content="Tính" HorizontalAlignment="Left" Margin="319,103,0,0" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.5,0.5" Height="30" Grid.Column="1" Grid.Row="1" Click="tinh_Click"/>
+        <Button x:Name="_out" Content="Kết Thúc" HorizontalAlignment="Left" Margin="319,166,0,0" VerticalAlignment="Top" Width="125" Height="31" Grid.Column="1" Grid.Row="1" Click="_out_Click"/>
+
+    </Grid>
+</Window>
